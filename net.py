@@ -21,12 +21,12 @@ class Wifi:
         self.wifi.active(True)
         for ssid, bssid, channel, RSSI, authmode, hidden in self.wifi.scan():
             ssid = ssid.decode("utf-8")
-            if ssid == "MLDEV":
+            if ssid == "WIFI1":
                 wifi_ssid = ssid
-                wifi_password = "Aysyw2ch?"
-            if ssid == "PortNet":
+                wifi_password = "******"
+            if ssid == "WIFI2":
                 wifi_ssid = ssid
-                wifi_password = "6179450923"
+                wifi_password = "******"
         
         if wifi_ssid:
             wait_seconds = 0
